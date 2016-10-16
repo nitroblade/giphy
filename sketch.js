@@ -7,8 +7,8 @@ var search;
 function setup() {
 	noCanvas();
 	var button = select('#submit');
-	button.mousePressed(szukaj)
-	search = select('#search')
+	button.mousePressed(szukaj);
+	search = select('#search');
 }
 
 function szukaj(){
@@ -20,5 +20,8 @@ function backData(giphy){
 	for (var i = 0; i < giphy.data.length; i++) {
 		createImg(giphy.data[i].images.fixed_height.url);
 
+	}
+	if (giphy.data.length <1) {
+		createP("Nic nie znaleziono")
 	}
 }

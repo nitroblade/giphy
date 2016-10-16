@@ -1,0 +1,18 @@
+#tata{
+
+}
+
+#search {
+	font-size: 16px;
+	border: 1px solid black;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px; 
+}
+#submit {
+	font-size: 16px;
+	border: 1px solid black;
+	color: white;
+	background: black;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

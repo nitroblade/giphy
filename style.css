@@ -1,12 +1,18 @@
 #tata{
-
+	margin: auto;
+	width: 90%;
 }
-
+#searchbar{
+	width: 450px;
+	margin: auto;
+}
 #search {
 	font-size: 16px;
 	border: 1px solid black;
 	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px; 
+	border-bottom-left-radius: 5px;
+	height: 30px; 
+	width: 300px;
 }
 #submit {
 	font-size: 16px;
@@ -15,7 +21,14 @@
 	background: black;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	height: 30px;
 }
 #limit {
 	font-size: 16px;
+	height: 30px;
+}
+#container {
+
+	height: auto;
+	
 }

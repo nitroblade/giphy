@@ -3,7 +3,6 @@ var apiKey = "dc6zaTOxFJmzC";
 var limit;
 var search;
 
-
 function setup() {
 	noCanvas();
 	var button = select('#submit');
@@ -18,11 +17,16 @@ function szukaj(){
 }
 
 function backData(giphy){
+
+	
+
 	for (var i = 0; i < giphy.data.length; i++) {
-		createImg(giphy.data[i].images.fixed_height.url);
+		// createA(giphy.data[i].images.original.url,createImg(giphy.data[i].images.fixed_height.url).parent('container') ).parent('container');
+		createA(giphy.data[i].images.original.url,'').id(giphy.data[i].images.original.url);
+		createImg(giphy.data[i].images.fixed_height.url).parent(giphy.data[i].images.original.url)
 
 	}
 	if (giphy.data.length <1) {
-		createP("Nic nie znaleziono")
+		createP("Nic nie znaleziono").parent('container');
 	}
 }

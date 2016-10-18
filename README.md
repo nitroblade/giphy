@@ -7,3 +7,4 @@ Co działa:<br>
 Co trzeba dodać/naprawić:<br>
 -dodanie możliwości oceniania i zapisywanie informacji na serwerze<br>
 -trzeba zadbać o wygląd poprzez rozbudowanie pliku style.css<br>
+demo: <a href='http://edark.pl/Giphy/index.html'>http://edark.pl/Giphy/index.html</a>

@@ -22,6 +22,12 @@ function szukaj(){
 	loadJSON(url, backData);
 }
 
+function keyPressed(){
+	if (keyCode == ENTER){
+		szukaj();
+	}
+}
+
 function backData(giphy){
 
 	

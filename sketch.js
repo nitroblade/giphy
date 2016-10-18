@@ -28,7 +28,7 @@ function backData(giphy){
 
 	for (var i = 0; i < giphy.data.length; i++) {
 		// createA(giphy.data[i].images.original.url,createImg(giphy.data[i].images.fixed_height.url).parent('container') ).parent('container');
-		createA(giphy.data[i].images.original.url,'').id(giphy.data[i].images.original.url);
+		createA(giphy.data[i].images.original.url,'').id(giphy.data[i].images.original.url).parent('container');
 		createImg(giphy.data[i].images.fixed_height.url).parent(giphy.data[i].images.original.url)
 
 	}

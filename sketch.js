@@ -2,6 +2,7 @@ var api = "http://api.giphy.com/v1/gifs/search?";
 var apiKey = "dc6zaTOxFJmzC";
 var limit;
 var search;
+var rm;
 
 function setup() {
 	noCanvas();
@@ -9,9 +10,14 @@ function setup() {
 	button.mousePressed(szukaj);
 	search = select('#search');
 	limit = select('#limit');
+	rm = select('#remove');
+	rm.mousePressed(usun);
 }
 
 function szukaj(){
+	removeElements('container');
+	createDiv('').parent('tata').id('container');
+
 	var url = api +"&api_key="+ apiKey + "&q=" + search.value()  + "&limit=" + limit.value();
 	loadJSON(url, backData);
 }
